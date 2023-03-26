@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Oliday</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/santa.png"></a>
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Information</button>
+                            <div class="dropdown-content">
+                                <a href="http://127.0.0.1:5500/hostel.html">Hostel</a>
+                                <a href="http://127.0.0.1:5500/blog.html">Blog</a>
+                                <a href="http://127.0.0.1:5500/faq.html">FAQ</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="http://127.0.0.1:5500/gallery.html">Gallery</a></li>
+                    <li><a href="http://127.0.0.1:5500/contact.html">Contact Us</a></li>
+                    <a href="http://127.0.0.1:5500/book.html" class="book-btn">Book Now</a>
+
+                    <a href="" class="login-btn">Login/Register &#8594;</a>
+
+
+                </ul>
+
+            </div>
+
+
+
+        </nav>
+
+
+    </section>
+    <button class="open-button" onclick="openForm()">Request a Call</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="popup-form.php" class="form-container" method="post">
+            <h1>Request a Call</h1>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter name" name="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="tel" placeholder="Enter Number" name="number" required>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="text-box">
+        <h1>Oliday</h1>
+        <p>Book your Holiday<br>With Oliday!!</p>
+        <a href="" class="hero-btn">Explore &#8594;</a>
+
+
+    </div>
+
+    <!-- Courses -->
+
+    <section class="course">
+        <h1>Ours Hotels and Restros</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur error sit nam rerum! Aperiam eius
+            voluptas consequuntur nam mollitia saepe?</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Villa's</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure consectetur obcaecati eum veritatis
+                    asperiores dolores earum officia quia corrupti possimus? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Similique soluta laudantium omnis.</p>
+            </div>
+            <div class="course-col">
+                <h3>Suite's</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure consectetur obcaecati eum veritatis
+                    asperiores dolores earum officia quia corrupti possimus? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Similique soluta laudantium omnis.</p>
+            </div>
+            <div class="course-col">
+                <h3>Apartments</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure consectetur obcaecati eum veritatis
+                    asperiores dolores earum officia quia corrupti possimus? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Similique soluta laudantium omnis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Locations</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor voluptas maxime ipsam ea eum vero itaque iste
+            delectus, corrupti omnis?</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="img/Pune.jpg" alt="">
+                <div class="layer">
+                    <h3>Pune</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="img/Mumbai.webp" alt="">
+                <div class="layer">
+                    <h3>Mumbai</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="img/udaipur2.jpg" alt="">
+                <div class="layer">
+                    <h3>Udaipur</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In velit consectetur optio exercitationem
+            perferendis dignissimos eveniet deserunt, unde hic eaque.</p>
+
+        <div class="row">
+            <div class="facilities">
+                <img src="img/books-5361664_960_720.png" alt="" width="400px">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto tempore molestiae quod
+                    neque cum aliquid quia dolore distinctio assumenda!</p>
+
+            </div>
+            <div class="facilities">
+                <img src="img/math-5605611_960_720.png" alt="" width="400px">
+                <h3>Play Grounds</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto tempore molestiae quod
+                    neque cum aliquid quia dolore distinctio assumenda!</p>
+
+            </div>
+            <div class="facilities">
+                <img src="img/apollo-148722_960_720.png" alt="" width="400px">
+                <h3>Healthy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat architecto tempore molestiae quod
+                    neque cum aliquid quia dolore distinctio assumenda!</p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonials</h1>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/2 w-full">
+              <div class="h-full bg-gray-100 p-8 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900">Holden Caulfield</span>
+                    <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/2 w-full">
+              <div class="h-full bg-gray-100 p-8 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900">Alper Kamu</span>
+                    <span class="text-gray-500 text-sm">DESIGNER</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="adv">
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="img/paypal-784404_960_720.webp" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="img/github-394322_960_720.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="img/database-183453_960_720.png" alt="">
+                    </div>
+
+                    <div class="col-6">
+                        <img src="img/google-1015751_960_720.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <p>Are You Interested?</p>
+        <h1>In case of any questions,<br> please contact us</h1>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corrupti mollitia error, <br>
+            modi eius nihil
+            quas illum cumque, sed quos voluptates odio vel molestiae rerum <br>
+            odit doloremque dignissimos suscipit
+            adipisci itaque dolor?</p>
+
+        <div class="icons">
+            <h3>Social With Us</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <p> Copyright Oliday &#169; - 2022</p>
+
+
+    </section>
+
+    <script src="form.js"></script>
+</body>
+
+</html>

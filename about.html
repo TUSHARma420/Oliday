@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="float.css">
+  <title>Oliday</title>
+</head>
+
+<body>
+  <section class="about-header">
+    <nav>
+      <img src="img/logo.png" alt="">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+        <span class="ml-3 text-white-1200">OlidaY</span>
+      </a>
+      <div class="nav-links">
+
+        <ul>
+          <li><a href="http://127.0.0.1:5502/index.html">Home</a></li>
+          <li><a href="http://127.0.0.1:5502/about.html">About</a></li>
+          <li>
+              <div class="dropdown">
+                  <button class="dropbtn">Information</button>
+                  <div class="dropdown-content">
+
+                      <a href="http://127.0.0.1:5502/blog.html">Blog</a>
+                      <a href="http://127.0.0.1:5502/faq.html">FAQ</a>
+                  </div>
+              </div>
+          </li>
+
+          <li><a href="http://127.0.0.1:5502/gallery.html">Gallery</a></li>
+          <li><a href="http://127.0.0.1:5502/contact.html">Contact Us</a></li>
+          <a href="http://127.0.0.1:5502/book.html" class="book-btn">Book Now</a>
+
+          <a href="http://127.0.0.1:5502/login.html" class="login-btn">Login/Register &#8594;</a>
+
+
+        </ul>
+
+      </div>
+
+    </nav>
+    <h1>About Us</h1>
+
+  </section>
+
+  <!------- Floating Contact From ------->
+
+  <div class="floating-contact-form">
+    <div class="form-container ">
+      <h3>Request A Call</h3>
+
+      <form action="popup-form.php">
+        <div class="field-container">
+          <i class="fa-solid fa-signature"></i>
+          <input type="text" name="name" placeholder="Enter name" required>
+
+        </div>
+
+
+        <div class="field-container">
+          <i class="fa-solid fa-phone"></i>
+          <input type="text" name="phone" placeholder="Enter phone number" required>
+        </div>
+
+        <div class="field-container">
+          <i class="fa-solid fa-message"></i>
+          <textarea placeholder="Message" cols="30" rows="10"></textarea>
+        </div>
+
+        <input type="submit" value="Send">
+      </form>
+    </div>
+
+    <div class="contact-icon">
+
+      <i class="fa-sharp fa-solid fa-comments"></i>
+
+    </div>
+  </div>
+
+
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>Oilday is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in specific locales.</h1>
+        <p>
+           Oliday offers people an easy, relatively stress-free way to earn some income from their property.
+          Guests often find Oliday is cheaper, has more character, and is homier than hotels.
+          Oliday makes the bulk of its revenue by charging a service fee for each booking.
+          Cons of using this service include not getting what you expected, and, for hosts, renting your place to someone you haven’t had the chance to meet first.</p>
+        <a href="" class="hero-btn red-btn">Read More &#8594;</a>
+      </div>
+      <div class="about-col">
+        <img src="img/traveller.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!--------- Meet The TEAM ------------>
+
+  <section class="meet-team">
+    <h1>Meet The Team</h1>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="img/1.png" alt="Pro" style="width:100%">
+          <div class="container">
+            <h2>Pronit Parida</h2>
+            <p class="title">CEO &amp; Founder</p>
+            <p>Lorem ipsum dolor sit. me lorem ipsum ipsum lorem.</p>
+            <p>pro@gmail.com</p>
+            <p><button class="button"><i class="fa-solid fa-phone"></i> &nbsp; &nbsp;6754389002</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/2.png" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Yash Devpura</h2>
+            <p class="title">Content writer</p>
+            <p>Lorem ipsum dolor sit. me lorem ipsum ipsum lorem.</p>
+            <p>yash@gmail.com</p>
+            <p><button class="button"><i class="fa-solid fa-phone"></i> &nbsp; &nbsp;7879534620</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/3.png" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Ayush Koul</h2>
+            <p class="title">Chief Technology Officer</p>
+            <p>Lorem ipsum dolor sit. me lorem ipsum ipsum lorem.</p>
+            <p>ayush@gmail.com</p>
+            <p><button class="button"><i class="fa-solid fa-phone"></i> &nbsp; &nbsp;9007856287</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/4.png" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Tushar Sharma</h2>
+            <p class="title">Cheif Operating officer</p>
+            <p>Lorem ipsum dolor sit. me lorem ipsum ipsum lorem.</p>
+            <p>tushar@gmail.com</p>
+            <p><button class="button"><i class="fa-solid fa-phone"></i> &nbsp; &nbsp;7654448000</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="img/5.png" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Amin Sheikh</h2>
+            <p class="title">Designer</p>
+            <p>Lorem ipsum dolor sit. me lorem ipsum ipsum lorem.</p>
+            <p>amin@gmail.com</p>
+            <p><button class="button">
+
+              <i class="fa-solid fa-phone"></i> &nbsp; &nbsp;8908845424</button></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Oilday is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in specific locales.<br> We aim to provide  people an easy, relatively stress-free way to earn some income from their property. </p>
+    <br>
+
+    <div class="icons">
+      <h3>Social With Us</h3>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p> Copyright Oliday &#169; - 2022</p>
+
+  </section>
+
+  <script src="form.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

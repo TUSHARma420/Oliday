@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="float.css">
+    <title>Oliday</title>
+</head>
+
+<body>
+    
+    <section class="contact-header">
+        <nav>
+            <img src="img/logo.png" alt="">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                
+                <span class="ml-3 text-white-1200">OlidaY</span>
+            </a>
+            <div class="nav-links">
+
+                <ul>
+                    <li><a href="http://127.0.0.1:5502/index.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5502/about.html">About</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Information</button>
+                            <div class="dropdown-content">
+
+                                <a href="http://127.0.0.1:5502/blog.html">Blog</a>
+                                <a href="http://127.0.0.1:5502/faq.html">FAQ</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="http://127.0.0.1:5502/gallery.html">Gallery</a></li>
+                    <li><a href="http://127.0.0.1:5502/contact.html">Contact Us</a></li>
+                    <a href="http://127.0.0.1:5502/book.html" class="book-btn">Book Now</a>
+
+                    <a href="http://127.0.0.1:5502/login.html" class="login-btn">Login/Register &#8594;</a>
+
+                 
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you!</p>
+        <p> &#8595;</p>
+
+    </section>
+
+     <!------- Floating Contact Form --------->
+    
+     <div class="floating-contact-form">
+        <div class="form-container ">
+            <h3>Request A Call</h3>
+
+            <form action="popup-form.php">
+                <div class="field-container">
+                    <i class="fa-solid fa-signature"></i>
+                    <input type="text" name="name" placeholder="Enter name" required>
+                    
+                </div>
+
+               
+                <div class="field-container">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="text" name="phone" placeholder="Enter phone number" required>
+                </div>
+
+                <div class="field-container">
+                    <i class="fa-solid fa-message"></i>
+                    <textarea placeholder="Message" cols="30" rows="10"></textarea>
+                </div>
+                
+                <input type="submit" value="Send">
+            </form>
+        </div>
+
+        <div class="contact-icon">
+            
+            <i class="fa-sharp fa-solid fa-comments"></i>
+            
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+
+    <section class="location">
+        <h1>Our Location</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.43816306241!2d73.74846191489328!3d18.554274587389404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf68981e5727%3A0xd3d192e0604fa736!2sParklane%20Urbanjoy!5e0!3m2!1sen!2sin!4v1666899194538!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <span>
+                        <i class="fa-solid fa-house"></i>
+
+                        <h5>Parklane Urbanjoy, Sus Road</h5>
+                        <p>Pune, Maharashtra, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa-solid fa-phone"></i>
+                        <h5>7978800565</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>oliday2022@gmail.com</h5>
+                        <p>Email Us for query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                    <input type="text"name="message"  placeholder="Enter your city" required>
+                    <textarea placeholder="Message" cols="30" rows="10"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Oilday is an online marketplace that connects people who want to rent out their homes with people who are looking for accommodations in specific locales.<br> We aim to provide  people an easy, relatively stress-free way to earn some income from their property. </p>
+        <br>
+
+        <div class="icons">
+            <h3>Social With Us</h3>
+            <a href=""><i class="fa-brands fa-facebook"></i></a> 
+            <a href="#" ><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" ><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" ><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p> Copyright Oliday &#169; - 2022</p>
+
+
+    </section>
+    <script src="form.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
